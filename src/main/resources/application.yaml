@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: simple-spring-security
+
+server:
+  port: 8080
