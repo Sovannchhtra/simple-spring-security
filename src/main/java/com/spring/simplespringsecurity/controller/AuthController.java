@@ -27,11 +27,6 @@ public class AuthController {
         return response;
     }
 
-    @PostMapping("/login")
-    public String login(){
-        return "Login successful";
-    }
-
     @PostMapping("/register")
     public Map<String,Object> register(@RequestBody UserRequest userRequest){
         return generateResponse(

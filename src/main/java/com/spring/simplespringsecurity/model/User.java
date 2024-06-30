@@ -24,6 +24,11 @@ public class User {
     private String email;
     private String password;
 
-    @ManyToMany
+    private boolean isDisable;
+    private boolean isAccountLocked;
+    private boolean isAccountExpired;
+    private boolean isCredentialsExpired;
+
+    @ManyToMany(fetch = FetchType.EAGER)
     private Set<Role> roles;
 }
