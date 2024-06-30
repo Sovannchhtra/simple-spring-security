@@ -1,6 +1,16 @@
 spring:
   application:
     name: simple-spring-security
+  datasource:
+    username: postgres
+    password: 132013
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/spring-security-v2-db
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
 
 server:
   port: 8080
