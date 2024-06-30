@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @Setter
 @Getter
@@ -20,4 +23,7 @@ public class User {
     @Column(unique = true, nullable = false)
     private String email;
     private String password;
+
+    @ManyToMany
+    private Set<Role> roles;
 }

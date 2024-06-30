@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Set;
+
 @Entity
 @Setter
 @Getter
@@ -19,4 +21,7 @@ public class Role {
     private String id;
     private String name;
     private String description;
+
+    @ManyToMany
+    private Set<Authority> authorities;
 }
