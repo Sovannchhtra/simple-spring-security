@@ -30,7 +30,7 @@ public class SecurityConfig {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
+    
     // Optional customization
     @Bean
     public DaoAuthenticationProvider daoAuthenticationProvider() {
